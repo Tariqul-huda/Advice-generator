@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+:root{
+    --color-light-cyan:hsl(193, 38%, 86%);
+    --color-neon-green:hsl(150, 100%, 66%);
+    --color-Grayish-Blue: hsl(217, 19%, 38%);
+    --color-dark-grayish-blue:hsl(217, 19%, 24%);
+    --color-dark-blue:hsl(218, 23%, 16%);
+
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Manrope', sans-serif;
+    font-size: 28px;
+    background-color: var(--color-dark-blue);
+    color:var(--color-light-cyan);
+}
+/* For Mobile  */
+.advice-card{
+    width:345px;
+    background-color: var(--color-dark-grayish-blue);
+    margin: 120px auto;
+    border-radius: 10px;
+}
+.advice-card__section{
+    max-width:305px;
+    margin: 10px auto;
+}
+.advice-card__header{
+    padding-top: 40px;
+    text-align: center;
+    color:var(--color-neon-green);
+    font-size: 16px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+.advice-card-text{
+    text-align: center;
+    word-wrap: break-word;
+}
+.advice-card-container{
+    width:inherit;
+    
+    
+}
+.advice-card-dice{
+    display: flex;
+    height:65px;
+    width: 65px;
+    border-radius: 32.5px;
+    background-color: var(--color-neon-green);
+    justify-content: center;
+    margin: 10px 39.5%;
+    position: relative;
+    top:30px;
+    transition: all 0.1s;
+}
+.advice-card-dice:hover{
+    cursor: pointer;
+}
+.advice-card-dice:active{
+    box-shadow: 2px 2px 13px var(--color-neon-green);
+
+}
+.advice-card-dice-icon{
+    display: inline-flex;
+    align-self:center;
+    justify-content: center;
+
+}
+.desktop{
+    display: none;
+}
+/* Mobile End  */
+/* Desktop Start  */
+@media screen and (min-width:1000px) {
+    .advice-card{
+        width:550px;
+        margin: 200px auto;
+
+    }
+    .advice-card__section{
+        min-width:442px;
+    }
+    .mobile{
+        display: none;
+    }
+    .desktop{
+        display: initial;
+    }
+    .advice-card-dice{
+        margin: 10px 44%;
+
+    }
+}

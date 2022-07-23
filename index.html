@@ -5,7 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <!-- Added Style sheet  -->
+  <link rel="stylesheet" href="Style/style.css">
+  <!-- Javascript -->
+  <script src="Script/script.js" defer></script>
   <title>Frontend Mentor | Advice generator app</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -16,13 +19,22 @@
 </head>
 <body>
 
-  Advice #<!-- Advice ID goes here -->
+  <main class="advice-card">
+    <section class="advice-card__section">
+      <h3 class="advice-card__header">Advice #<span class="advice-card-id"></span></h3>
+      <p class="advice-card-text"></p>
+      <img src="images/pattern-divider-mobile.svg" class="mobile" alt="Pattern divider">
+      <img src="images/pattern-divider-desktop.svg" class="desktop" alt="desktop Icon">
+    </section>
+    <div class="advice-card-dice-container">
+      <div class="advice-card-dice">
+        <img src="images/icon-dice.svg" alt="Dice Icon" class="advice-card-dice-icon">
+      </div>
+    </div>
 
-  "<!-- Advice text goes here -->"
+  </main>
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+
   </div>
 </body>
 </html>

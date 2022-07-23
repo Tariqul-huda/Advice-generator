@@ -44,6 +44,9 @@ body{
     
     
 }
+button{
+    border: none;
+}
 .advice-card-dice{
     display: flex;
     height:65px;
@@ -71,6 +74,9 @@ body{
 }
 .desktop{
     display: none;
+}
+button:disabled{
+    background-color: grey;
 }
 /* Mobile End  */
 /* Desktop Start  */

@@ -17,4 +17,11 @@ function fetchAdvice(){
 }
 
 
-button.addEventListener('click',fetchAdvice)
+button.addEventListener('click',()=>{
+    button.disabled = true;
+    button.classList.add("disabled")
+      setTimeout(()=>{
+        button.removeAttribute("disabled")
+        fetchAdvice()
+    },2000)
+})

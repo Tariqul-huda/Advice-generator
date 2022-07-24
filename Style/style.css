@@ -64,7 +64,14 @@ button{
 }
 .advice-card-dice:active{
     box-shadow: 2px 2px 13px var(--color-neon-green);
-
+    
+}
+button:disabled{
+    background-color: grey;
+}
+button:disabled:hover{
+    cursor:not-allowed;
+    box-shadow: none;
 }
 .advice-card-dice-icon{
     display: inline-flex;
@@ -74,9 +81,6 @@ button{
 }
 .desktop{
     display: none;
-}
-button:disabled{
-    background-color: grey;
 }
 /* Mobile End  */
 /* Desktop Start  */

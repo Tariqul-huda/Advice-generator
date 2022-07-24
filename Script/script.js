@@ -8,7 +8,7 @@ function addId(idd){
     id.textContent=`${idd}`;
 }
 function fetchAdvice(){
-    fetch('https://api.adviceslip.com/advice').then(res=>res.json()).then(data=>{
+    fetch('https://api.adviceslip.com/advice',{cache:"no-cache"}).then(res=>res.json()).then(data=>{
         addText(data.slip.advice)
         addId(data.slip.id)
     }).catch(err=>{
@@ -18,10 +18,9 @@ function fetchAdvice(){
 
 
 button.addEventListener('click',()=>{
-    button.disabled = true;
-    button.classList.add("disabled")
-      setTimeout(()=>{
-        button.removeAttribute("disabled")
+    button.disabled = true
+    setTimeout(()=>{
+        button.removeAttribute('disabled')
         fetchAdvice()
     },2000)
 })
